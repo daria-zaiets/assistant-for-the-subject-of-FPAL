@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Способи введення-виведення даних</title>
+
+    <!-- general styles -->
+    <link rel="stylesheet" href="../style/style.css">
+
+    <!-- typical page and special media styles -->
+    <link rel="stylesheet" href="../style/type-style.css">
+
+    <!-- media style -->
+    <link rel="stylesheet" href="../style/media-style.css">
+
+    <!-- only typical page text styles -->
+    <link rel="stylesheet" href="../style/text-style.css">
+</head>
+
+<body class="body">
+    <div class="container">
+        <header class="header">
+            <hr>
+            <h1 class="title">Твій асистент</h1>
+            <h2 class="subtitle">Основи програмування та алгоритмічні мови</h2>
+            <h2 class="subtitle">Електронний довідник</h2>
+            <hr>
+
+            <!-- main dropdown menu -->
+            <!-- static part -->
+            <ul class="menu-top">
+                <li>
+                    <button id="nav-toggle" href="#">
+                        <img src="../img/menu-icon.png" alt="" class="menu-icon">
+                    </button>
+                </li>
+                <li class="item-menu">
+                    <a href="../index.html">Головна</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">Основні математичні функції</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">Основні типи даних С++</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">Про довідник</a>
+                </li>
+
+                <!-- dropdown part -->
+                <div id="myDropdown" class="dropdown-content">
+                    <li>
+                        <a href="../index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="#">Основні математичні функції</a>
+                    </li>
+                    <li>
+                        <a href="#">Основні типи даних С++</a>
+                    </li>
+                    <li>
+                        <a href="#">Про довідник</a>
+                    </li>
+                    <li>
+                        <a href="input-data.html" class="main-menu-link">
+                            Знайомство з Visual C++. Способи введення-виведення даних
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Програмування лінійних алгоритмів</a>
+                    </li>
+                    <li>
+                        <a href="#">Програмування розгалужень. Умовний оператор if</a>
+                    </li>
+                    <li>
+                        <a href="#">Програмування розгалужень. Оператор вибору варіантів switch</a>
+                    </li>
+                    <li>
+                        <a href="#">Програмування циклів. Оператор циклу з параметром for</a>
+                    </li>
+                    <li>
+                        <a href="#">Циклічне опрацювання послідовностей чисел</a>
+                    </li>
+                    <li>
+                        <a href="#">Вкладені цикли</a>
+                    </li>
+                    <li>
+                        <a href="#">Оператори циклу while та do-while</a>
+                    </li>
+                    <li>
+                        <a href="#">Організація функцій в С++</a>
+                    </li>
+                </div>
+            </ul>
+            <hr>
+        </header>
+
+        <!-- the menu by reference book topics -->
+        <nav class="menu">
+
+            <!-- input of menu -->
+            <input type="text" id="mySearch" placeholder="Search.." title="Type in a category">
+
+            <!-- search menu items -->
+            <ul class="main-menu">
+                <li class="item">
+                    <a href="input-data.html" class="main-menu-link">
+                        Знайомство з Visual C++. Способи введення-виведення даних
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="main-menu-link">
+                        Програмування лінійних алгоритмів
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="main-menu-link">
+                        Програмування розгалужень. Умовний оператор if</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="main-menu-link">
+                        Програмування розгалужень. Оператор вибору варіантів
+                        switch
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="main-menu-link">
+                        Програмування циклів. Оператор циклу з параметром
+                        for</a></li>
+                <li class="item">
+                    <a href="#" class="main-menu-link">
+                        Циклічне опрацювання послідовностей чисел
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="main-menu-link">
+                        Вкладені цикли
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="main-menu-link">
+                        Оператори циклу while та do-while
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="main-menu-link">
+                        Організація функцій в С++
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- main contains tutorial text on the topic  -->
+        <main class="main">
+
+            <!-- general title of section -->
+            <h2 class="heading" id="title-of-chapter">Знайомство з Visual C++. Способи введення-виведення даних</h2>
+
+            <!-- section second level  -->
+            <h3 class="heading">Введення-виведення даних</h3>
+            <p class="parag">
+                Visual С++ підтримує декілька способів введення-виведення даних залежно від типу програмного проекту
+                (консольний додаток чи проект WindowsForms) та використовуваних команд.
+            </p>
+
+            <!-- section third level  -->
+            <h4 class="heading">Введення-виведення в стилі С++</h4>
+            <p class="parag">
+                Для введення-виведення даних у С++ найчастіше використовуються потокові команди
+                <span class="console-font">cin>> </span> (вхідний потік) та <span class="console-font"> cout<< </span>
+                (вихідний потік) бібліотеки<span class="console-font">iostream.h</span>, наприклад:
+                <span class="console-font">
+                    <br>cout<< "Введіть число: " ; 
+                    <br>cin>> x;
+                    <br>cout<< "Квадрат цього числа: " << x*х << endl;
+                </span>
+            </p>
+            <p class="parag">
+                Перша з команда <span class="console-font"> cout<< </span> виведе рядок символів і залишить курсор на тому ж самому рядку. При 
+                цьому символи рядка виводитимуться по одному, доки не зустрінеться завершальний символ "\0". Друга команда дозволить ввести 
+                значення змінної x. Третя команда сформує рядок, поряд виведе числове значення та перемістить курсор на новий рядок 
+                (маніпулятор <span class="console-font">endl</span> ).
+            </p>
+            <p class="parag">
+                До речі, крім маніпулятора <span class="console-font">endl</span>, новий рядок можна сформувати виведенням символу <span class="console-font">'\n'</span>. Ще одним часто використовуваним спеціальним символом для кращого вигляду виведених даних є символ табуляції <span class="console-font">'\t'</span>, який формує відступ.
+            </p>
+            <p class="parag">
+                Зауважимо, що при виведенні тексту для коректного відображення літер кирилиці слід застосувати команду
+                <span class="console-font">setlocale(0,".1251")</span> (або <span class="console-font">setlocale(LC_ALL, "Russian")</span> ). 
+                Виведення замість літер кирилиці усілякої абракадабри спричинено тим, що Visual Studio в консольних додатках використовує для 
+                набраного тексту кодування Windows1251, а для введеного тексту–кодування DOS. Коректно відобразити введений за допомогою 
+                <span class="console-font"> cin>> </span> текст дозволить команда <span class="console-font">setlocale(LC_ALL,".OCP")</span>, повернувши початкові налаштування кодування.
+            </p>
+            <p class="parag">
+                Доволі зручною є можливість виведення за допомогою <span class="console-font"> cout<< </span> чисел не лише в десятковому 
+                форматі, а і в шістнадцятковому чи вісімковому, використовуючи модифікатори dec,hex і oct усередині вихідного потоку:
+                <span class="console-font">
+                    <br> setlocale(0,".1251");
+                    <br> cout << "Вісімковий:\t\t" << oct << 10 << " " << 255 << endl; 
+                    <br> cout << "Шістнадцятковий:\t" << uppercase << hex << 10 << " " << 255 << endl; 
+                    <br> cout << "Десятковий:\t\t" << dec << 10 << " " << 255 << endl; 
+                </span>
+            </p>
+            <p class="parag">Результатом виконання цих команд будуть рядки:
+                <span class="console-font">
+                    <br> Вісімковий: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12 377
+                    <br> Шістнадцятковий: &nbsp; А FF
+                    <br> Десятковий: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 255
+                </span>
+            </p>
+            <p class="parag">
+                Слід зазначити, що використання одного з цих модифікаторів залишиться в силі, допоки чи то програма не
+                завершиться, чи то не буде використано інший модифікатор.
+            </p>
+            <p class="parag">
+                Для форматування даних при виведенні командою <span class="console-font"> cout<< </span> можна використовувати 
+                модифікатор <span class="console-font">setw</span>, який дозволяє задавати числа. При цьому зазначена 
+                модифікатором ширина є дійсною лише для одного числа. Для можливості використання модифікаторів слід долучити 
+                заголовний файл <span class="console-font">iomanip</span>. Якщо виведене число має меншу, аніж зазначену у 
+                модифікаторі <span class="console-font">setw</span> ширину, перед ним будуть виведені пробіли. Так, команди
+                <span class="console-font">
+                    <br> #include &lt;iomanip&gt;
+                    <br> . . . . .
+                    <br> cout<< "x=" << setw(1) << 155 << endl; <br> cout<< "x=" << setw(3) << 155 << endl; 
+                    <br> cout<< "x=" << setw(5) << 155 << endl; 
+                </span>
+                <br> сформують рядки у такому вигляді:
+                <span class="console-font">
+                    <br> x=155
+                    <br> x=155
+                    <br> x=&nbsp;&nbsp;155
+                </span>
+            </p>
+            <p class="parag">
+                Тобто в останньому рядку перед значенням 155 виведуться два пробіли, а все число займе п’ять позицій.
+            </p>
+            <p class="parag">
+                При виведенні дійсних чисел, особливо коли йдеться про виведення матриць дійсних чисел, доситьдоречним є
+                обмеження кількості знаків після десяткової крапки за допомогою маніпулятора 
+                <span class="console-font">setprecision(int count) </span>:
+                <span class="console-font">
+                    <br> cout << fixed << setprecision(3) << (13.5 / 2) << endl; //6.750 
+                    <br> cout << fixed << setprecision(2) << 24.16425 << endl; // 24.16 
+                </span>
+            </p>
+            <p class="parag">
+                Використаний тут маніпулятор <span class="console-font"> fixed </span> задає виведення дійсних чисел з
+                рухомою крапкоюу форматі з фіксованою крапкою.
+            </p>
+            <p class="parag">
+                Команда <span class="console-font"> cout<< </span> дозволяє перенаправляти виведення на пристрій чи до
+                файла за допомогою операторів перепризначення виведення операційної системи. Однак, повідомлення
+                про помилки звичайно недоречно спрямовувати до файла і при цьому не виводити на екран. Для уникнення таких 
+                ситуацій існує спеціальний вихідний потік <span class="console-font"> cerr </span>, пов'язаний зі стандартним 
+                пристроєм помилок. Наприклад, команда
+                <span class="console-font">
+                    <br> cerr << "Повідомлення про помилку" << endl;
+                </span>
+                <br> cформує відповідне повідомлення на екрані, а операційна система не дозволить перенаправити виведення на 
+                інший пристрій чи до файла.
+            </p>
+        </main>
+
+        <footer class="footer">
+            <hr>
+            <h4>Основи програмування та алгоритмфчні мови. Електронний довідник. 2021</h4>
+            <hr>
+        </footer>
+    </div>
+
+    <script src="../scripts/search.js"></script>
+    <script src="../scripts/menu.js"></script>
+</body>
+
+</html>

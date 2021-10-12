@@ -1,0 +1,111 @@
+/* --- GENERAL STYLES --- */
+
+.body {
+    margin: 0;
+    background-color: rgb(0, 92, 35, 0.2);
+    font-family: Roboto;
+}
+
+.container {
+    margin: 10px 50px;
+    padding: 10px 20px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fefefe;
+    display: grid;
+}
+
+/* --- HEADER --- */
+
+/* line at header and footer */
+hr {
+    border: 0;
+    height: 2px;
+    margin: 0;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgb(0, 92, 35), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgb(0, 92, 35), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgb(0, 92, 35), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgb(0, 92, 35), rgba(0, 0, 0, 0));
+}
+
+.header {
+    grid-area: header;
+}
+
+/* text at header and footer */
+.title,
+.subtitle,
+.footer {
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* title of page */
+.title {
+    color: rgb(0, 92, 35);
+    font-style: oblique;
+}
+
+/* subtitle and text at footer of page */
+.subtitle,
+.footer {
+    color: rgb(0, 92, 35, 0.5);
+}
+
+/* main dropdown menu */
+.menu-top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+/* item of main dropdown menu */
+.menu-top a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu-top a:hover {
+    background-color: #eee;
+    transition: background-color 0.8s;
+}
+
+/* dropdown menu img (at button#nav-toggle) */
+.menu-icon {
+    height: 50px;
+}
+
+/* dropdown menu button */
+#nav-toggle {
+    display: none;
+    border: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+/* --- FOOTER --- */
+
+.footer {
+    grid-area: footer;
+}
+
+/* font for page */
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}

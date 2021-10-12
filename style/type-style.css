@@ -1,0 +1,99 @@
+/* --- TYPICAL PAGE STYLES --- 
+ * -- special media styles --
+ */
+
+.container {
+  grid-template-rows: 0.3fr 3fr 0.05fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";
+}
+
+/* --- THE MENU BY REFERENCE BOOK TOPICS ---*/
+
+/* container of menu */
+.menu {
+  grid-area: menu;
+}
+
+/* the menu by reference book topics */
+#mySearch {
+  width: 85%;
+  font-size: 16px;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+#mySearch:focus {
+  transition: border 1s;
+  border: 2px solid rgb(0, 92, 35);
+  outline: 0;
+}
+
+/* search menu item container */
+.main-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* search menu items */
+.main-menu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.main-menu li a:hover {
+  background-color: #eee;
+  transition: background-color 0.8s;
+}
+
+/* for screen 980px -  1200px */
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  /* link to reference book topic */
+  .chapter {
+    width: 45%;
+  }
+}
+
+/* for screen 770px -  980px */
+@media screen and (min-width: 770px) and (max-width: 980px) {
+  .container {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+
+  /*  the menu by reference book topics */
+  .menu {
+    display: none;
+  }
+
+  /* main dropdown menu */
+  .menu-top {
+    position: relative;
+  }
+
+  /* dropdown menu button */
+  #nav-toggle {
+    display: inline-block;
+  }
+
+  /* dropdown menu content */
+  .dropdown-content {
+    top: 100px;
+    width: 75%;
+  }
+}

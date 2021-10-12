@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Твій асистент по ОПтаАМ</title>
+    
+    <!-- general styles -->
+    <link rel="stylesheet" href="style/style.css">
+    
+    <!-- media style -->
+    <link rel="stylesheet" href="style/home-style.css">
+
+    
+    <!-- only homepage styles -->
+    <link rel="stylesheet" href="style/media-style.css" />
+</head>
+
+<body class="body">
+    <div class="container">
+        <header class="header">
+            <hr>
+            <h1 class="title">Твій асистент</h1>
+            <h2 class="subtitle">Основи програмування та алгоритмічні мови</h2>
+            <h2 class="subtitle">Електронний довідник</h2>
+            <hr>
+
+            <!-- main dropdown menu -->
+            <!-- static part -->
+            <ul class="menu-top">
+                <li>
+                    <button id="nav-toggle" href="#">
+                        <img src="img/menu-icon.png" alt="" class="menu-icon">
+                    </button>
+                </li>
+                <li class="item-menu">
+                    <a href="index.html">Головна</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">Основні математичні функції</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">Основні типи даних С++</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">Про довідник</a>
+                </li>
+
+                <!-- dropdown part -->
+                <div id="myDropdown" class="dropdown-content">
+                    <li>
+                        <a href="index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="#">Основні математичні функції</a>
+                    </li>
+                    <li>
+                        <a href="#">Основні типи даних С++</a>
+                    </li>
+                    <li>
+                        <a href="#">Про довідник</a>
+                    </li>
+                </div>
+            </ul>
+            <hr>
+        </header>
+
+        <!-- main contains links to reference book topics -->
+        <main class="main">
+            <a href="pages/input-data.html" class="chapter">
+                <div class="scale">
+                    <img src="img/cout-chapter1.jpg" alt="" class="background">
+                </div>
+                <p>Знайомство з Visual C++. Способи введення-виведення даних</p>
+            </a>
+            <a href="#" class="chapter">
+                <div class="scale">
+                    <img src="img/block-diagram-ch2.PNG" alt="" class="background">
+                </div>
+                <p>Програмування лінійних алгоритмів</p>
+            </a>
+            <a href="#" class="chapter">
+                <div class="scale">
+                    <img src="img/branched-algorithm-ch3.PNG" alt="" class="background">
+                </div>
+                <p>Програмування розгалужень. Умовний оператор if</p>
+            </a>
+            <a href="#" class="chapter">
+                <div class="scale">
+                    <img src="img/switch-ch4.png" alt="" class="background">
+                </div>
+                <p>Програмування розгалужень. Оператор вибору варіантів switch</p>
+            </a>
+            <a href="#" class="chapter">
+                <div class="scale">
+                    <img src="img/for_loop.png" alt="" class="background">
+                </div>
+                <p>Програмування циклів. Оператор циклу з параметром for</p>
+            </a>
+            <a href="#" class="chapter">
+                <div class="scale">
+                    <img src="img/loop.png" alt="" class="background">
+                </div>
+                <p>Циклічне опрацювання послідовностей чисел</p>
+            </a>
+            <a href="#" class="chapter">
+                <div class="scale">
+                    <img src="img/double-loop.png" alt="" class="background">
+                </div>
+                <p>Вкладені цикли</p>
+            </a>
+            <a href="#" class="chapter">
+                <div class="scale">
+                    <img src="img/while-loop.png" alt="" class="background">
+                </div>
+                <p>Оператори циклу while та do-while</p>
+            </a>
+            <a href="#" class="chapter">
+                <div class="scale">
+                    <img src="img/function.png" alt="" class="background">
+                </div>
+                <p>Організація функцій в С++</p>
+            </a>
+        </main>
+
+        <footer class="footer">
+            <hr>
+            <h4>Основи програмування та алгоритмфчні мови. Електронний довідник. 2021</h4>
+            <hr>
+        </footer>
+    </div>
+
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

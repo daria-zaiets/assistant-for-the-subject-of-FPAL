@@ -1,0 +1,32 @@
+/* ----- ONLY TYPICPAGE TEXT STYLES ----- */
+
+/* heading in tutorial text */
+.heading {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin: 10px 0;
+    color: rgb(0, 61, 23, 0.7);
+    line-height: 50px;
+}
+
+/* title of tutorial text */
+#title-of-chapter {
+    color: rgb(0, 61, 23);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* tutorial text */
+.parag {
+    text-indent: 20px;
+}
+
+/* font for parts with code */
+.console-font {
+    font-family: Consolas;
+}
+
+@font-face {
+    font-family: Consolas;
+    src: url(../font/Consolas/consola.ttf);
+}
