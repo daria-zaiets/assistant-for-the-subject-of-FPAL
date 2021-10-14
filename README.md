@@ -8,7 +8,7 @@ This is a starting template of the electronic reference book for the subject "Fu
 
 :link: https://daria-zaiets.github.io/assistant-for-the-subject-of-FPAL/
 
-### :iphone: ***Сomputer version*** :phone:
+### :computer: ***Сomputer version*** :zap:
 <img src='img/readme/assistant.gif' alt='demo-gif' width='600px'>
 
 ### :iphone: ***Mobile version*** :phone:
