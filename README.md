@@ -26,18 +26,18 @@ The homepage contains links to all sections of the reference book. Each link is 
 
 There are some more useful links at the top of the page.
 
-<img src='img/readme/menu-links.png' alt='menu-links' width='600px'>
+<img src='img/readme/menu-links.PNG' alt='menu-links' width='600px'>
 
 Links are implemented with flebox, so adding new elements is easy.
 
 ### ***Typical page***
 Typical page has 2 parts. First part is a tutorial text, that explains the selected topic.
 
-<img src='img/readme/text.png' alt='tutorial-text' width='600px'>
+<img src='img/readme/text.PNG' alt='tutorial-text' width='600px'>
 
 Second part is a filter. Use it to navigate topics without going to home.
 
-<img src='img/readme/filter.png' alt='filter' width='150px'>
+<img src='img/readme/filter.PNG' alt='filter' width='150px'>
 
 All other pages will be made in the same way as a typical.
 
